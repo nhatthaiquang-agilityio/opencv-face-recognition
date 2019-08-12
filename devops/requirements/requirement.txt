@@ -1,0 +1,4 @@
+imutils
+argparse
+opencv-python==4.1.0.25
+scikit-learn

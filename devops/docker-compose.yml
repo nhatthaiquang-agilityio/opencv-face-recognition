@@ -1,0 +1,11 @@
+version: '2'
+services:
+  opencv-deeplearning:
+    container_name: opencv-deep-learning
+    build:
+      context: ./
+    command: jupyter notebook --ip=0.0.0.0 --allow-root
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../src:/home/jovyan/work
