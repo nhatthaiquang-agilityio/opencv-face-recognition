@@ -31,6 +31,11 @@ Use OpenCV to perform face recognition. To build our face recognition system.
     docker-compose up
     ```
 
++ Excute
+    ```
+    docker exec -it opencv-deeplearning bash
+    ```
+
 + Extract embeddings data
     ```
     python extract_embeddings.py --dataset dataset \
