@@ -1,12 +1,12 @@
 # OpenCV Face Recognition
 Use OpenCV to perform face recognition. To build our face recognition system.
 
-## Technique
--------------
+## Requisites
 + OpenCV
 + BlobFromImage
 + Numpy
 + Scikit-learn
++ Matplotlib
 
 ### Issues
 -----------
@@ -33,7 +33,7 @@ Use OpenCV to perform face recognition. To build our face recognition system.
 
 + Excute
     ```
-    docker exec -it opencv-deeplearning bash
+    docker exec -it opencv-deep-learning bash
     ```
 
 + Extract embeddings data
@@ -51,7 +51,7 @@ Use OpenCV to perform face recognition. To build our face recognition system.
 + Run recognize
     ```
     python recognize.py --detector face_detection_model --recognizer output/recognizer.pickle \
-        --le output/le.pickle --image images/test3.jpg
+        --le output/le.pickle --image images/test1.jpg
     ```
 
 + Run on Jumpyter: Using recognize_jumpyter.py

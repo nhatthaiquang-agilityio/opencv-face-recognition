@@ -29,7 +29,7 @@ args = vars(ap.parse_args())
 print("[INFO] loading face detector...")
 protoPath = os.path.sep.join([args["detector"], "deploy.prototxt"])
 modelPath = os.path.sep.join(
-    [args["detector"], "weights.caffemodel"])
+    [args["detector"], "res10_300x300_ssd_iter_140000.caffemodel"])
 detector = cv2.dnn.readNetFromCaffe(protoPath, modelPath)
 
 # load our serialized face embedding model from disk
@@ -58,6 +58,7 @@ detector.setInput(imageBlob)
 detections = detector.forward()
 
 print("Load dectections")
+
 # loop over the detections
 for i in range(0, detections.shape[2]):
     # extract the confidence (i.e., probability) associated with the

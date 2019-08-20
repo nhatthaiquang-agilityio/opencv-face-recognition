@@ -1,0 +1,7 @@
+*.ipynb
+src/*.ipynb
+
+*.pyc
+
+*.DS_Store
+src/*.DS_Store
