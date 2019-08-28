@@ -8,6 +8,11 @@ Use OpenCV to perform face recognition. To build our face recognition system.
 + Scikit-learn
 + Matplotlib
 
+### Requirements
++ RAM 8GB
++ GPU
+
+
 ### Issues
 -----------
 + Doesn't detect someone who is wearing glasses.
