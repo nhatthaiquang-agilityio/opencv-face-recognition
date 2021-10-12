@@ -1,6 +1,6 @@
 imutils
 argparse
-opencv-python==4.1.0.25
+opencv-python==4.2.0.32
 scikit-learn
 dlib
 face_recognition
